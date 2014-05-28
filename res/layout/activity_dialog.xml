@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.flather.skisafe.DialogActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_vertical"
+	    tools:ignore="UseCompoundDrawables" >
+    
+	    <ImageView
+	        android:id="@+id/imageView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dp"
+	        android:src="@drawable/ic_action_warning" />
+		
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingBottom="10dp"
+	        android:paddingTop="10dp"
+	        android:text="@string/danger"
+	        android:textAppearance="?android:attr/textAppearanceLarge"
+	        android:textColor="#33b5e5" />
+    
+    </LinearLayout>
+	
+	<View   
+    	android:id="@+id/firstDivider"
+        android:layout_height="2dp"
+        android:layout_width="fill_parent"
+        android:background="#33b5e5" />
+	
+	<TextView
+	    android:id="@+id/textView2"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:paddingBottom="5dp"
+	    android:paddingTop="5dp"
+	    android:text="@string/crash_detected"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	<TextView
+	    android:id="@+id/textView3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="@string/sending_alert"
+	    android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	<TextView
+	    android:id="@+id/textViewCountDown"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:text="@string/thirty"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textSize="42sp" />
+	
+	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dip"
+	    android:background="?android:attr/dividerHorizontal" />
+
+	
+	<LinearLayout 
+	    style="?android:attr/buttonBarStyle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="0dip"
+	    android:paddingLeft="2dip"
+	    android:paddingRight="2dip"
+	    android:measureWithLargestChild="true">
+	
+	    <Button 
+	        android:id="@+id/buttonDialogCancel"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/cancel_alert"/>
+	    <Button 
+	        android:id="@+id/buttonDialogOk"
+	        style="?android:attr/buttonBarButtonStyle"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="@string/send_alert"/>
+	</LinearLayout>
+
+
+	
+</LinearLayout>
+    
+

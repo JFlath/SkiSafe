@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Main Activity -->
+    <string name="app_name">Ski Safe</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Tracking</string>
+    <string name="title_section2">Map</string>
+    <string name="title_section3">Friends</string>
+    <string name="title_section4">Utilities</string>
+
+    <!-- Action bar -->
+    <string name="action_search">Search</string>
+    <string name="action_new">New</string>
+
+    <!-- Tracking -->
+    <string name="toggle_tracking">Tracking</string>
+    <string name="toggle_message">Messaging</string>
+    <string name="safe">SAFE</string>
+    <string name="caution">CAUTION</string>
+    <string name="danger">DANGER</string>
+    <string name="location">Location</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitude">Latitiude</string>
+    <string name="none">None</string>
+    <string name="provider">Provider</string>
+    <string name="forces">Forces</string>
+    <string name="current">Current</string>
+    <string name="max">Max</string>
+    <string name="average">Average</string>
+    <string name="last">Last</string>
+    <string name="xCoord">X</string>
+    <string name="yCoord">Y</string>
+    <string name="zCoord">Z</string>
+    <string name="speed">Speed</string>
+    <string name="alert">Not Tracking</string>
+    <string name="confirm_messaging">Are you sure you want to commence tracking without messaging enabled?</string>
+    <string name="enable_messaging">Enable messaging</string>
+    <string name="continue_without">Continue anyway</string>
+    
+
+    <!-- Friends -->
+    <string name="contactNumber">Contact Number</string>
+    <string name="set">Set</string>
+
+    <!-- Utilities -->
+    <string name="toggle_logging">Logging</string>
+    <string name="toggle_threshold">Threshold Values</string>
+    <string name="export_button">Export</string>
+    <string name="caution_val">Caution Value</string>
+    <string name="danger_val">Danger Value</string>
+
+    <!-- Location Serivce -->
+
+    <string name="tracking_in_progress">Ski tracking in progress</string>
+    <string name="title_activity_dialog">DialogActivity</string>
+
+    <!-- Dialog Activity -->
+    <string name="crash_detected">Crash Detected!</string>
+    <string name="sending_alert">Sending alert in</string>
+    <string name="thirty">30</string>
+    <string name="send_alert">Send Alert</string>
+    <string name="cancel_alert">Cancel Alert</string>
+    
+    
+
+</resources>

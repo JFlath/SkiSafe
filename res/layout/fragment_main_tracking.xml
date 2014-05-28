@@ -1,0 +1,407 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ddd"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TrackingFragment" >
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_marginTop="4dp"
+			android:background="@drawable/bg_card"
+			android:orientation="vertical" >
+			
+			<!-- Card Contents go here -->
+			<Switch
+				android:id="@+id/trackingSwitch"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/toggle_tracking" />
+			
+			
+			<Switch
+				android:id="@+id/messageSwitch"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/toggle_message" />
+			
+			<TextView
+				android:id="@+id/textAlert"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/alert"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_marginTop="4dp"
+			android:background="@drawable/bg_card"
+			android:orientation="vertical" >
+			
+			<!-- Card Contents go here -->
+			<TextView
+				android:id="@+id/textSpeed"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/speed" />
+			
+			<LinearLayout
+			    android:id="@+id/linearLayoutSpeed"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			
+				<LinearLayout
+				    android:id="@+id/linearLayoutSpeedAverage"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:orientation="vertical" >
+					
+					<TextView
+					    android:id="@+id/textSpeedAverage"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_horizontal"
+					    android:layout_weight="1"
+					    android:gravity="center"
+					    android:text="@string/average"
+					    android:textStyle="bold" />
+									
+					<TextView
+					    android:id="@+id/textSpeedAverageValue"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_gravity="center_horizontal"
+					    android:layout_weight="1"
+					    android:gravity="center_horizontal"
+					    android:text="@string/none"
+					    android:textAppearance="?android:attr/textAppearanceLarge" />
+					
+				</LinearLayout>
+
+				<LinearLayout
+				    android:id="@+id/linearLayoutSpeedMax"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:orientation="vertical"
+				    android:showDividers="beginning" >
+
+				    <TextView
+				        android:id="@+id/textSpeedMax"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center_horizontal"
+				        android:layout_weight="1"
+				        android:gravity="center"
+				        android:text="@string/max"
+				        android:textStyle="bold" />
+
+				    <TextView
+				        android:id="@+id/textSpeedMaxValue"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_gravity="center_horizontal"
+				        android:layout_weight="1"
+				        android:gravity="center_horizontal"
+				        android:text="@string/none"
+				        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+				</LinearLayout>
+			
+			</LinearLayout>
+			
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_marginTop="4dp"
+			android:background="@drawable/bg_card"
+			android:orientation="vertical" >
+			
+			<!-- Card Contents go here -->
+			<TextView
+				android:id="@+id/textLocation"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/location" />
+			
+			<TextView
+			    android:id="@+id/textLocationTime"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:text="@string/current"
+			    android:textAppearance="?android:attr/textAppearanceSmall"
+			    android:textStyle="bold" />
+			
+			<LinearLayout
+				android:id="@+id/linearLayout2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+			
+				<TextView
+					android:id="@+id/textLong"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/longitude" />
+				
+				<TextView
+					android:id="@+id/textLongValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+			
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/linearLayout3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				
+				<TextView
+					android:id="@+id/textLat"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="@string/latitude" />
+				
+				<TextView
+					android:id="@+id/textLatValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/linearLayout4"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				
+				<TextView
+					android:id="@+id/textProvider"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:text="@string/provider" />
+				
+				<TextView
+					android:id="@+id/textProviderValue"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+	
+			</LinearLayout>
+			
+		</LinearLayout>	
+		
+	</FrameLayout>
+	
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+	
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="4dp"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_marginTop="4dp"
+			android:background="@drawable/bg_card"
+			android:orientation="vertical" >
+			
+			<!-- Card Contents go here -->
+			<TextView
+				android:id="@+id/textForces"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:text="@string/forces" />
+			
+			<LinearLayout
+				android:id="@+id/linearLayoutForceTime"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+			
+				<TextView
+					android:id="@+id/textDummy"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:text=""
+					tools:ignore="HardcodedText" />
+				
+				<TextView
+					android:id="@+id/textForceCurrent"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:textStyle="bold"
+					android:text="@string/current" />
+				
+				<TextView
+					android:id="@+id/textForceMax"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:textStyle="bold"
+					android:text="@string/max" />
+			
+			</LinearLayout>
+						
+			<LinearLayout
+				android:id="@+id/linearLayoutFCurX"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				
+				<TextView
+					android:id="@+id/textXCoord"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:text="@string/xCoord" />
+				
+				
+				<TextView
+					android:id="@+id/textXCoordValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+				<TextView
+					android:id="@+id/textXCoordValueMax"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+			
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/linearLayoutFCurY"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				
+				<TextView
+					android:id="@+id/textYCoord"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:text="@string/yCoord" />
+				
+				<TextView
+					android:id="@+id/textYCoordValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+				<TextView
+					android:id="@+id/textYCoordValueMax"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+			</LinearLayout>
+			
+			<LinearLayout
+				android:id="@+id/linearLayoutFCurZ"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal" >
+				
+				<TextView
+					android:id="@+id/textZCoord"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:text="@string/zCoord" />
+				
+				<TextView
+					android:id="@+id/textZCoordValue"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+				<TextView
+					android:id="@+id/textZCoordValueMax"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="right"
+					android:text="@string/none" />
+				
+			</LinearLayout>
+		
+		</LinearLayout>
+		
+	</FrameLayout>
+	
+</LinearLayout>
